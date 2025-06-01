@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bms-service
+  name: show-app-service
   labels:
-    app: bms
+    app: show-app
 spec:
   type: LoadBalancer
   ports:
   - port: 80
     targetPort: 3000  # Replace with the port your app runs on
   selector:
-    app: bms
+    app: show-app
