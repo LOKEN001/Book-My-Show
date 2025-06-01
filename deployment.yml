@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: show-app
   labels:
-    app: bms
+    app: show-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: bms
+      app: show-app
   template:
     metadata:
       labels:
