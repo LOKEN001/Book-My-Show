@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bms-app
+  name: show-app
   labels:
     app: bms
 spec:
@@ -12,10 +12,10 @@ spec:
   template:
     metadata:
       labels:
-        app: bms
+        app: show-app
     spec:
       containers:
-      - name: bms-container
-        image: kastrov/bms:latest  # Replace with your Docker image
+      - name: show-app-container
+        image: master101/app-show:latest  # Replace with your Docker image
         ports:
         - containerPort: 3000  # Replace with the port your app runs on
